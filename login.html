@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<script type="text/javascript">
+		
+		function dispaly() {
+			
+			sname=document.getElementById("lgname1");
+			spass=document.getElementById("lgpass1");
+
+			window.alert(sname.value);
+			window.alert(spass.value)
+		}
+	</script>
+</head>
+<body>
+
+	<div class="image1">
+		<img src="pics/pic4.jpg" width="100%" height="700px">
+	</div>
+	
+	<div class="box">
+			<div class="login-box">
+			  <h1>Login</h1>
+
+			  <div class="textbox">
+			  	<div class="input-field">
+			    <i class="fas fa-user"></i>
+			    <input type="text" placeholder="Username" name="lgname" id="lgname1" required="">
+			    </div>
+			  </div>
+			  <div class="textbox">
+			    <i class="fas fa-lock"></i>
+			    <input type="password" placeholder="Password" name="lgpass" id="lgpass1">
+			  </div>
+
+			  <input type="button" class="btn" value="Sign in" name="lgbtn" onclick="dispaly()">
+		</div>		
+	</div>
+	
+
+</body>
+</html>
