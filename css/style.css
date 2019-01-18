@@ -54,10 +54,19 @@ body{
 
 }
 .card{
-	outline-color: red;
+	margin-right: 10px;
+	height: 280px;
+	background-color: black;
+	transition: 3s;
+
+}
+.card:hover{
+ transform: scale(1.1);
+ box-shadow: 5px 10px 15px #888888;
 }
 .card-body button{
 	font-weight: bold;
+	justify-content: center;
 }
 .srhd h2{
 	text-transform: uppercase;
@@ -70,12 +79,8 @@ body{
 	text-align: center;
 	font-size: 25px;
 	font-family: 'Lateef', cursive;
-	background-color: transparent;
+	
 }
-
-
-
-
 .inner{
 	overflow: hidden;
 }
@@ -83,13 +88,12 @@ body{
 	transition: all 1.5s ease;
 }
 .inner:hover img{
-	transform: scale(1.5);
+	transform: scale(1.1);
 }
 .card{
-	margin-top: 20px;
+	margin-top: 30px;
 	opacity: 1;
 	border-radius: 15px;
-	box-shadow: 0px 3px 10px  red;
 	transition: 1.5s;
 }
 
@@ -109,7 +113,7 @@ font-weight: bold;
 
 .fb{
 	margin-top: 10px;
-	background: url(pic1.jpg) fixed;
+	background: url(pic3.jpg) fixed;
 	background-repeat: no-repeat;
 	width: 100%;
 	min-height: 100vh;
@@ -129,7 +133,8 @@ font-weight: bold;
 
 
 .blog{
-	background-color: #FFE7BA;
+	background-color: #FFFFF0;
+
 }
 .blgtxt h2{
  text-transform: uppercase;
@@ -190,7 +195,7 @@ font-weight: bold;
 .contact{
 	padding: 50px 9px 80px;
 	text-align: center;
-	background-color: #D2691E;
+	background-color: #E3E3E3;
 }
 .cntxt h2{
 	text-transform: uppercase;
@@ -233,7 +238,7 @@ font-weight: bold;
 	font-size: 35px;
 	padding: 5px;
 	justify-content: center;
-	color: red;
+	color: black;
 }
 
 
