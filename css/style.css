@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lateef');
 @import url('https://fonts.googleapis.com/css?family=Merienda+One');
 @import url('https://fonts.googleapis.com/css?family=Niconne');
+@import url('https://fonts.googleapis.com/css?family=Dynalight');
+@import url('https://fonts.googleapis.com/css?family=Italianno');
 body{
   margin: 0;
   padding: 0;
@@ -87,7 +89,10 @@ body{
 	margin-top: 20px;
 	opacity: 1;
 	border-radius: 15px;
+	box-shadow: 0px 3px 10px  red;
+	transition: 1.5s;
 }
+
 .card-body{
 	text-transform: uppercase;
 	
@@ -124,7 +129,7 @@ font-weight: bold;
 
 
 .blog{
-	background-color: #fff123;
+	background-color: #FFE7BA;
 }
 .blgtxt h2{
  text-transform: uppercase;
@@ -135,44 +140,67 @@ font-weight: bold;
 	font-size: 30px;
 	font-family: 'Niconne', cursive;
 }
-.bannu{
-	border-radius: 15px;
-	box-shadow: 0 5px 20px rgb(0,0,0,.3);
-	z-index: 2;
-	margin-bottom: 50px;
+
+.pt1 ul{
+	width: 100%;
+
 }
-.bannu:hover{
-transition: 0.5s;
-opacity: 0.9;
+.pt1 li{
+	justify-content: center;
+	width: 25%;
+	background-color: white;
 }
-.btn123{
-	position: absolute;
-	left: 70px;
-	z-index: 3;
-	opacity: 0;
+.pt1 li:hover{
+	background-color: #7a991a;
+	color: white;
 }
-.bannu:hover .btn123{
-opacity: 1;
-transform: translateY(100px);
-transition: 0.5s;
+.pt1 a:hover{
+	
+	color: white;
 }
+
+.pt1 a{
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+}
+.pt2 img{
+	width: 100%;
+	background-size: cover;
+	min-height: 100px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+
+}
+.pt2 h3{
+	text-transform: uppercase;
+	padding-top: 40px;
+}
+.pt2 p{
+	padding-top: 4px;
+	font-family: 'Dynalight', cursive;
+	font-size: 25px;
+}
+
 
 
 
 .contact{
 	padding: 50px 9px 80px;
 	text-align: center;
-	background-color: blue;
+	background-color: #D2691E;
 }
 .cntxt h2{
 	text-transform: uppercase;
 	font-family: 'Aclonica', sans-serif;
-	color: white;
+	color: black;
 }
 .cntxt p{
 	font-size: 30px;
 	font-family: 'Niconne', cursive;
-	color: white;
+	color: black;
 }
 .contact .input-group{
 	margin-bottom: 25px;
@@ -200,6 +228,18 @@ transition: 0.5s;
 	color: #fff !important;
 
 }
+.cnpt i{
+	
+	font-size: 35px;
+	padding: 5px;
+	justify-content: center;
+	color: red;
+}
+
+
+
+
+
 .footer{
 	padding: 30px;
 	color: #cccccc;
