@@ -155,7 +155,7 @@ font-weight: bold;
 	width: 25%;
 	background-color: white;
 }
-.pt1 li:hover{
+.pt1 li:hover, .pt1 li:active{
 	background-color: #7a991a;
 	color: white;
 }
@@ -243,6 +243,30 @@ font-weight: bold;
 
 
 
+.hotel{
+	margin-top: : 50px;
+	margin-bottom: 50px;
+	padding: 50px 9px 80px;
+	position: relative;
+}
+.ht1 h2{
+	text-transform: uppercase;
+	padding-top: 3%;
+	text-align: center;
+	color: black;
+	font-family: 'Aclonica', sans-serif;
+}
+.ht1 p{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Lateef', cursive;
+	
+}
+.ht2{
+	transform: scale(1);
+}
+
+
 
 
 .footer{
@@ -258,4 +282,90 @@ font-weight: bold;
 }
 #img3{
 	width: 100%;
+}
+/* card service */
+.car{
+	padding-left: 30px 0px 40px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	background-color: #f1effa;
+	margin-top: 50px;
+	box-shadow: 5px 10px 15px #888888;
+}
+.car .pic{
+	display: inline-block;
+	height: 150px;
+	width: 145px;
+	margin-bottom: 30px;
+	z-index: 1;
+	position: relative;
+}
+.car .pic:before{
+	content: '';
+	width: 100%;
+	height: 0;
+	border-radius: 50%;
+	background-color: #222222;
+	position: absolute;
+	bottom: 135%;
+	left: 0;
+	right: 0;
+	transform: scale(3);
+	transition: all .4s linear 0s;
+}
+.car:hover .pic:before{
+	height: 100%;
+}
+.car .pic:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #222222;
+	position: absolute;
+	left: 0;
+	height: 0;
+	z-index: -1;
+}
+.car .pic img{
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	transform: scale(1);
+	margin-top: 30px;
+	transition: all .4s linear 0s;
+}
+.car:hover .pic img{
+	box-shadow: 0 0 0 14px #222222;
+	transform: scale(0.7);
+}
+.car .tex h2{
+	
+	font-family: 'Aclonica', sans-serif;
+	margin-bottom: 100px;
+	font-size: 25px;
+	text-transform: uppercase;
+	transform: translate(-50,-50);
+	text-transform: uppercase;
+}
+.car .bb{
+	width: 100%;
+	margin:0;
+	padding:10px 0;
+	background-color: #222222;
+	position: absolute;
+	bottom: -200px;
+	left: 0;
+	transition: all 0.4s ease 0s;
+}
+.car .bb button{
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+.car:hover .bb{
+	bottom: 0;
 }
