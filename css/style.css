@@ -42,6 +42,34 @@ body{
 	padding: 0 ! important;
 
 }
+.navbar-toggler{
+	float: right!important;
+	position: absolute;
+	right: 5px !important;
+	top:8px!important;	
+}
+#dwn ul{
+	display: block!important;
+}
+#dwn li{
+color: black!important;
+display: block;
+padding-top: 12px;
+padding-left: 15px;
+
+}
+#dwn li a{
+	color: black!important;
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: 0px;
+	display: block!important;
+}
+#dwn li a:hover{
+	color: #7a991a!important;
+	background-color: white!important;
+	text-decoration: none;
+}
 .jbtxt p{
 	font-size: 45px;
     font-family: 'Tangerine', cursive;
@@ -53,6 +81,7 @@ body{
 	background-color: transparent !important;
 
 }
+
 .card{
 	margin-right: 10px;
 	height: 280px;
@@ -362,10 +391,158 @@ font-weight: bold;
 .car .bb button{
 	background-color: white;
 	color: black;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	font-weight: bold;
 	font-size: 20px;
 	text-transform: capitalize;
 }
 .car:hover .bb{
 	bottom: 0;
+}
+
+
+
+
+/*modal login*/
+:root {
+  --modal-duration: 1s;
+  --modal-color: #e8491d;
+}
+
+.mdlg h2{
+	color: black;
+}
+
+.button {
+  background:#e8491d;
+  padding: 1em 2em;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #3876ac;
+}
+
+.modal {
+	display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  margin: 10% auto;
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+
+.modal-header {
+  background: var(--modal-color);
+  padding: 15px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.modal-footer {
+  background: var(--modal-color);
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-footer a{
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+}
+
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*login page */
+
+}
+.login-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+.login-box h1{
+  float: left;
+  font-size: 40px;
+  color: #e8491d;
+  font-family: sans-serif;
+  border-bottom: 3px solid #e8491d;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #e8491d;
+}
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: #e8491d;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
 }
