@@ -14,6 +14,7 @@
 	
 
 	<!--navigation bar-->
+	
 	<div id="mynavbar" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" role="navigation">
 		<div class="container-fluid">
 
@@ -21,7 +22,7 @@
 				<div class="navbd">
 				<a href="#" class="navbar-brand">Logo</a>
 				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1">
+				<button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#nav1">
 			    	<span class="navbar-toggler-icon"></span>
 			  	</button>
 			</div>
@@ -32,13 +33,15 @@
 					<li class="nav-item"><a href="#service" class="nav-link">services</a></li>
 					<li class="nav-item"><a href="#blog" class="nav-link">blog</a></li>
 					<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navdrop" role="button" data-toggle="dropdown" aria-haspopup="true"aria-expanded="false">more</a>
-
-					<div class="dropdown-menu" aria-labelledby="navdrop">
-						<a href="#" class="drop-item">login</a>
-						<a href="#" class="drop-item">login</a>
-						<a href="#" class="drop-item">login</a>
-					</div></li>
+					<li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">more
+				        <span class="caret"></span></a>
+				        <ul class="dropdown-menu" id="dwn">
+				          <li class="text-dark"><a href="#">login</a></li>
+				          <li class="text-dark"><a href="#" class="text-dark">register</a></li>
+				          <li><a href="#">profile</a></li>
+				       </ul>
+      				</li>
 				</ul>
 			</div>
 			
@@ -77,7 +80,7 @@
 					<h2 class="title text-dark text-fluid">Train</h2>
 				</div>
 				<div class="bb">
-					<button class="btn btn-success"> book now</button>
+					<button class="btn btn-success" id="modal-btn1"> book now</button>
 				</div>
 			</div>
 			</div>
@@ -90,7 +93,7 @@
 					<h2 class="title text-dark text-fluid">aeroplane</h2>
 				</div>
 				<div class="bb">
-					<button class="btn btn-success"> book now</button>
+					<button class="btn btn-success" id="modal-btn"> book now</button>
 				</div>
 			</div>
 			</div>
@@ -116,15 +119,14 @@
 					<h2 class="title text-dark text-fluid">cab</h2>
 				</div>
 				<div class="bb">
-					<button class="btn"> book now</button>
+					<button class="btn btn-success"> book now</button>
 				</div>
 			</div>
 			</div>
 		</div>
+	
 	</div>
-		</div>
-	</div>
-	</div>
+</div>
 	<!--offers-->
 
 
@@ -220,6 +222,7 @@
 	</div>
 
 	
+	
 
 	<!--contact-->
 
@@ -264,27 +267,37 @@
 
 
 	<!--data-modal-->
-
-	<div class="modal"  role="dialog" id="md">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title">Modal title</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-4">
+	<div id="my-modal" class="modal">
+    <div class="modal-content " id="mdid">
+      <div class="modal-header">
+        <span class="close" id="closebutton">&times;</span>
+        <h2 id="mdlg" class="text-fluid text-center">Login</h2>
+      </div>
 	      <div class="modal-body">
-	        <p>Modal body text goes here.</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+	          <div class="textbox">
+	            <div class="input-field">
+	            	
+	            	<input type="text" placeholder="Email" name="lgeml" id="lgname1" required="">
+	            </div>
+	          </div>
+	          <div class="textbox">
+	            
+	            <input type="password" placeholder="Password" name="lgpass" id="lgpass1" required="">
+	          </div>
 
+	          <button type="submit" class="btn" value="login" name="lgbtn" id="mdlgbtn">login</button> 
+	      </div>
+      <div class="modal-footer">
+          <a href="registration.html" class="text-fluid">don't have an account? Signup</a>
+      </div>
+    </div>
+  </div></div>
+  </div>
+</div>
+  
 	<!---footer-->
 	<div class="footer" id="footer">
 		<div class="container">
@@ -312,6 +325,8 @@
 		</div>
 	</div>
 
+	<script src="modal.js"></script>
+	<script src="register.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
