@@ -16,7 +16,7 @@
 	<!--navigation bar-->
 	
 	<div id="mynavbar" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" role="navigation">
-		<div class="container">
+		<div class="container-fluid">
 
 			<div class="navbar-header">
 				<div class="navbd" id="brand">
@@ -37,7 +37,7 @@
 				        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">more
 				        <span class="caret"></span></a>
 				        <ul class="dropdown-menu" id="dwn">
-				          <li class="text-dark"><a href="#">login</a></li>
+				          <li class="text-dark"><a href="#"id="modal-btn">login</a></li>
 				          <li class="text-dark"><a href="#" class="text-dark">register</a></li>
 				          <li><a href="#">profile</a></li>
 				       </ul>
@@ -84,6 +84,7 @@
 				</div>
 			</div>
 			</div>
+
 			<div class="col-md-3 col-sm-6">
 			<div class="car" >
 				<div class="pic">
@@ -93,10 +94,11 @@
 					<h2 class="title text-dark text-fluid">aeroplane</h2>
 				</div>
 				<div class="bb">
-					<button class="btn btn-success" id="modal-btn"> book now</button>
+					<button class="btn btn-success" > book now</button>
 				</div>
 			</div>
 			</div>
+
 			<div class="col-md-3 col-sm-6">
 			<div class="car" >
 				<div class="pic">
@@ -110,6 +112,7 @@
 				</div>
 			</div>
 			</div>
+
 			<div class="col-md-3 col-sm-6">
 			<div class="car" >
 				<div class="pic">
@@ -123,11 +126,12 @@
 				</div>
 			</div>
 			</div>
+
 		</div>
-	
 	</div>
 </div>
 	<!--offers-->
+
 
 
 
@@ -136,23 +140,25 @@
 
 	<!--Blog-->
 	<div class="blog " id="blog">
-		<div class="container-fluid">
+		<div class="container">	
+
 			<div class="blgtxt">
-			<h2 class="text-center text-fluid justify-content-center">Touriest Blog</h2>
-			<p class="text-center text-fluid justify-content-center">One's destination is never a place, but a new way of seeing things.</p>
+				<h2 class="text-center text-fluid justify-content-center">Touriest Blog</h2>
+				<p class="text-center text-fluid justify-content-center">One's destination is never a place, but a new way of seeing things.</p>
 			</div>
+
 				<div class="pt1">
-				<ul class="nav nav-tabs">
-				    <li class="active"><a data-toggle="tab" href="#me1" class="nav-link">Tajmahal</a></li>
-				    <li><a data-toggle="tab" href="#me2" class="nav-link">simla</a></li>
-				    <li><a data-toggle="tab" href="#me3" class="nav-link">redfort</a></li>
-				    <li><a data-toggle="tab" href="#me4" class="nav-link">golconda</a></li>
-				  </ul>
+					<ul class="nav nav-tabs">
+					    <li class="active"><a data-toggle="tab" href="#me1" class="nav-link">Tajmahal</a></li>
+					    <li><a data-toggle="tab" href="#me2" class="nav-link">simla</a></li>
+					    <li><a data-toggle="tab" href="#me3" class="nav-link">redfort</a></li>
+					    <li><a data-toggle="tab" href="#me4" class="nav-link">golconda</a></li>
+				  	</ul>
 				</div>
+
 				<div class="pt2">
 				  <div class="tab-content">
 				    <div id="me1" class="tab-pane active">
-				
 				    	<div class="row">
 				    		<div class="col-md-6 col-sm-12 col-lg-6">
 				      			<h3 class="text-center text-fluid">Tajmahal</h3>
@@ -162,8 +168,8 @@
 				      			<img src="pics/taj.jpg">
 				      		</div>
 				        </div>
-
 				    </div>
+
 				    <div id="me2" class="tab-pane fade">
 				      <div class="row">
 				      		<div class="col-md-6 col-sm-12">
@@ -173,12 +179,10 @@
 				      			<h3 class="text-center text-fluid">Simla hill station</h3>
 				      			<p>Shimla hill station is still the colonial summer capital (resort) to which British used to retreat in when heat of Indio-Gangetic plains used to become unbearable. Be it grey-stone work of Vice Regal Lodge, or Gaiety Theater putting neo-gothic architectural excellence, the beauty of building seem to come alive and not only staying in eyes of beholder. The Elizabethan style mixed and merged with different other forms in buildings like Ellerslie, Christ Church, Gorton Castle, Wood Ville, etc are a must-see.</p>
 				      		</div>
-				      		
 				        </div>
 				    </div>
 				    <div id="me3" class="tab-pane fade">
 				      <div class="row">
-
 				      		<div class="col-md-6 col-sm-12">
 				      			<img src="pics/rd.jpg">
 				      		</div>
@@ -236,7 +240,7 @@
 						<span class="input-group-addon" id="sizaing-addon1">
 							<i class="fa fa-phone" aria-hidden="true"></i>
 						</span>
-						<input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="phone number">
+						<input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone number">
 					</div>	
 				</div>
 				</div>
@@ -255,32 +259,35 @@
 	<!--data-modal-->
 	<div class="container-fluid">
 		<div class="row">
-		<div class="col-md-4">
-	<div id="my-modal" class="modal">
-    <div class="modal-content " id="mdid">
-      <div class="modal-header">
-        <span class="close" id="closebutton">&times;</span>
-        <h2 id="mdlg" class="text-fluid text-center">Login</h2>
-      </div>
-	      <div class="modal-body">
-	          <div class="textbox">
-	            <div class="input-field">
-	            	
-	            	<input type="text" placeholder="Email" name="lgeml" id="lgname1" required="">
-	            </div>
-	          </div>
-	          <div class="textbox">
-	            
-	            <input type="password" placeholder="Password" name="lgpass" id="lgpass1" required="">
-	          </div>
 
-	          <button type="submit" class="btn" value="login" name="lgbtn" id="mdlgbtn">login</button> 
-	      </div>
-      <div class="modal-footer">
-          <a href="registration.html" class="text-fluid">don't have an account? Signup</a>
-      </div>
-    </div>
-  </div></div>
+			<div class="col-md-4">
+				<div id="my-modal" class="modal">
+			    <div class="modal-content " id="mdid">
+
+			      <div class="modal-header">
+			      	<h2 id="mdlg" class="text-fluid text-center">Login</h2>
+			        <span class="close" id="closebutton">&times;</span>
+			        
+			      </div>
+				      <div class="modal-body">
+				          <div class="textbox">
+				            <div class="input-field">
+				            	<input type="text" placeholder="Email" name="lgeml" id="lgname1" required="">
+				            </div>
+				          </div>
+
+				          <div class="textbox">
+				            <input type="password" placeholder="Password" name="lgpass" id="lgpass1" required="">
+				          </div>
+
+				          <button type="submit" class="btn" value="login" name="lgbtn" id="mdlgbtn">login</button> 
+				      </div>
+			     	 <div class="modal-footer">
+			          <a href="registration.html" class="text-fluid">don't have an account? Signup</a>
+			      	</div>
+	    	</div>
+  			</div>
+	</div>
   </div>
 </div>
   
@@ -289,30 +296,29 @@
 		<div class="container">
 			<div class="row">
 				<div class="ftd">
-					<div class="ftgp1">
-					<div class="col-l6-4 col-m6-4 col-sm-12" >
-					<h4 class="fth" >Contact us</h4>
-					<div ftp1>
-					<p>MREC</p>
-					<p>maisammmaguda,kompally,hyderabad</p>
-					<p>9505561175</p>
-					<p>www.bannu99@blogspot.com</p>
-					</div>
-					</div>
-					</div>
-				</div>
-				<div class="ftgp2">
-				<div class="col-lg-6 col-md-6 col-sm-12">
-				
-					<h4 class="fth justify-content-center">Group</h4>
-					<p>Lekhana</p>
-					<p>Tanuja</p>
-					<p>Priya</p>
-					<p>Bhanu</p>
-				</div>
-			</div>
 
-				
+					<div class="ftgp1">
+						<div class="col-lg-6 col-m6-4 col-sm-12" >
+							<h4 class="fth" >Contact us</h4>
+							<div ftp1>
+								<p>MREC</p>
+								<p>maisammmaguda,kompally,hyderabad</p>
+								<p>9505561175</p>
+								<p>www.bannu99@blogspot.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ftgp2">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<h4 class="fth justify-content-center">Group</h4>
+						<p>Lekhana</p>
+						<p>Tanuja</p>
+						<p>Priya</p>
+						<p>Bhanu</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
