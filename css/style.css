@@ -205,6 +205,27 @@ font-weight: bold;
 }
 
 
+.fb{
+	margin-top: 10px;
+	background: url(pic3.jpg) fixed;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 100vh;
+	background-size: cover;
+}
+.fb p{
+	text-transform: capitalize;
+	color: #7a991a;
+	font-size: 40px;
+	justify-content: center;
+	padding-top: 20%;
+	opacity: 1;
+    font-family: 'Niconne', cursive;
+}
+
+
+
+
 .blog{
 	background-color: #FFFFF0;
 
@@ -350,22 +371,23 @@ font-weight: bold;
 .footer h4{
 	color: darkred;
 	padding-bottom: 15px;
-	justify-content: center;
-	text-align: center;
+	font-size: 25px;
 }
 
 .footer p{
 	text-align: center;
 	padding: 0 0;
 }
-
+.fth{
+	padding-left: 0px!important;
+}
 .ftgp1{
-	justify-content: center;
+	
 	padding-left: 16%;
 }
 .ftgp2{
 	justify-content: center;
-	padding-left: 30%
+	padding-left: 15%
 }
 .ftgp1 h4::before{
 		content: '';
@@ -803,9 +825,11 @@ font-weight: bold;
 	#inp2{
 		margin-top: 0px!important;
 	}
+
+
 	.ftgp1 h4{
 		justify-content: center;
-		padding-left: 0px!important;
+		
 		
 	}
 	.ftgp1 p{
@@ -823,11 +847,11 @@ font-weight: bold;
 	}
 	.ftgp2 h4{
 		margin-top: 30px;
-		padding-left: 0%!important;
-		justify-content: center;
+		padding-left: 80px!important;
+		
 	}
 	.ftgp2 p{
-		justify-content: center;
+		padding-left: 80px;
 	
 	}
 	.ftgp2 h4::before{
@@ -841,5 +865,32 @@ font-weight: bold;
 		transform: translateY(41px);
 	}
 	
-	
+	.modal-content {
+		  margin: 30% auto !important;
+		  width: 75%!important;
+		  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17)!important;
+		  animation-name: modalopen;
+		  animation-duration: var(--modal-duration);
+		}
+	.modal-header h2{
+		padding-top: 20px;
+		padding-left: 10px; 
+	  margin: 0;
+	  font-family: 'Aclonica', sans-serif;
+	  padding-right: 35%!important;
+	  font-size: 25px;
+	}
+	.modal-footer a{
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 300!important;
+	color: white;
+	padding-left: 25%;
+	}
+	.modal-footer a:hover,
+	.modal-footer a:focus{
+		text-decoration: none;
+		font-size: 13px;
+		color: white;
+	}
 }
