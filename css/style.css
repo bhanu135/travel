@@ -490,16 +490,25 @@ font-weight: bold;
 	padding:10px 0;
 	background-color: rgba(0,0,0,0.85);
 	position: absolute;
-	bottom: -200px;
+	bottom: -250px;
 	left: 0;
 	transition: all 0.4s ease 0s;
 }
-.car .bb button{
-	background-color: rgba(255,255,255,0.8);
+
+.car .bb a{
+	border:2px solid white;
 	color: black;
 	padding-top: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
 	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
 	font-weight: 600;
+	color: none;
 	font-size: 20px;
 	text-transform: capitalize;
 }
