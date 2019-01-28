@@ -5,52 +5,50 @@
   <link rel="stylesheet" type="text/css" href="css/reg.css">
 </head>
 <body>
-  <div class="bg">
-    <img src="pics/pic6.jpg" width="100%" height="100%">
-  </div>
   
   <div class="box">
-  <div class="rgform">
-    <h1 align="center" id="rgnm">
-    Registration form
-    </h1>
+  
+    <h1>Registration form</h1>
     <div class="rg-in">
         <form>
-        <label class="lb">Firstname:</label>
-        <input type="text" name="name" class="inp">
-        <br><br>
-        <label class="lb">Lastname:</label>
-        <input type="text" name="name" class="inp">
-        <br><br>
-        <label class="lb">Email:</label>
-        <input type="Email" name="email" placeholder="user@gmail.com" class="inp">
-        <br><br>
-        <label class="lb">Password:</label>
-        <input type="password" name="pwd" class="inp"><br><br>
-        <label class="lb">Re-password:</label>
-        <input type="password" name="pwd" class="inp"><br><br>
-        <label class="lb">Phno:</label>
-        <select name="+91" class="sel-1">
-          <option value="+92">+91</option>
-          <option value="+01">+92</option>
-          <option value="+144">+140</option>
-          <option value="+152">+01</option>
-        </select>
         
-        <input type="Number" name="pnno" class="sel2"><br><br>
-        <label class="lb">Gender:</label>
-        <input type="radio" name="gender" value="male">male 
-        <input type="radio" name="gender" value="female">female <br><br>
-        <label class="lb">DOB:</label>
-        <input type="date" name="bday" class="dat"><br><br>
-        <input type="checkbox" name="cb">
-        <label>I accept terms and condition</label>
+            <div>
+              <input type="text" name="name" class="inp" required="">
+              <label class="lb">Firstname:</label>
+              <br><br>
+            </div>
+            <div>
+              <input type="text" name="name" class="inp" required="">
+              <label class="lb">Lastname:</label>
+              <br><br>
+            </div>
+            <div>
+              <input type="Email" name="email" class="inp" required="">
+              <label class="lb">Email:</label>
+              <br><br>
+            </div>
+            <div>  
+              <input type="password" name="pwd" class="inp" required="">
+              <label class="lb">Password:</label>
+              <br><br>
+            </div>
 
-        
-        <input type="submit" name="btn" value="submit" id="snbtn">
+            <div>
+              <input type="password" name="pwd" class="inp" required="">
+              <label class="lb">Re-password:</label>
+              <br><br>
+            </div>
+            <div>
+               <input type="Number" name="PhoneNumber"  required="">
+               <label class="lb">PhoneNumber:</label>
+               <br><br>
+            </div>
 
-        <br>
-
+            
+              <div>
+                <input type="submit" name="btn" value="register" id="snbtn">
+                <br>
+              </div>
     </div>
     
   </div>
