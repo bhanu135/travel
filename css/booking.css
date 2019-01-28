@@ -1,0 +1,236 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	
+}
+section{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(pic1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+	
+}
+section .box{
+	position: relative;
+	width: 800px;
+	height: 530px;
+	padding-left: 50px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	overflow: hidden;
+	color: #fff;
+
+}
+section .box::before{
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -20px;
+	bottom: -20px;
+	background-image: url(pic1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+	filter: blur(4px);
+}
+section .box h2{
+	position: relative;
+	margin-top: 40px;
+	margin-left: 35%;
+	text-shadow: 2px 0px  5px #fff;
+	justify-content: center;
+	padding:0;
+	font-size: 40px;
+	color: #000;
+	text-transform: uppercase;
+	z-index: 2;
+}
+
+section .box label{
+	position: relative;
+	margin: 0 0 430px;
+	padding:0;
+	font-size: 24px;
+	color: #fff;
+	margin-left: 10%;
+	background-color: transparent;
+	text-transform: uppercase;
+	z-index: 3;
+}
+section .box input{
+	position: relative;
+	margin: 0 0 30px;
+	padding-left: 15px;
+	font-size: 24px;
+	background-color: transparent;
+	border:none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+	z-index: 3;
+}
+section .box input[type="submit"]{
+	position: relative;
+	margin: 0 0 30px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-size: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border:2px solid #fff;
+	color: #fff;
+	margin-left: 30%;
+	text-transform: uppercase;
+	z-index: 3;
+}
+section .box input[type="submit"]:hover{
+	color: #fff;
+	background-color: #000;
+}
+section .box fieldset{
+	position: relative;
+	margin-left: 1px;
+	margin-top: 20px;
+	font-size: 24px;
+	margin-right: 35px;
+	margin-bottom: 20px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+	z-index: 3;
+}
+section .box legend{
+	position: relative;
+	margin: 0 0 30px;
+	padding-left: 15px;
+	font-size: 35px;
+	background-color: transparent;
+	color: #fff;
+	text-transform: uppercase;
+	z-index: 3;
+}
+@media (max-width: 580px){
+
+	section{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-image: url(pic1.jpg);
+			background-attachment: fixed;
+			background-size: cover;
+			height: 100vh;
+	
+		}
+
+		section .box{
+			position: relative;
+			width: 80%;
+			height: 85%;
+			padding-left: 15px;
+			box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+			overflow: hidden;
+			color: #fff;
+
+		}
+	section .box::before{
+		content: '';
+		position: absolute;
+		top: -20px;
+		left: -20px;
+		right: -20px;
+		bottom: -20px;
+		background-image: url(pic1.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		height: 100vh;
+		filter: blur(4px);
+	}
+
+	section .box h2{
+		position: relative;
+		margin-top: 5px;
+		margin-left: 25%;
+		text-shadow: 1px 0px  2px #000;
+		justify-content: center;
+		padding:0;
+		font-size: 25px;
+		color: #fff;
+		text-transform: uppercase;
+		z-index: 2;
+}
+
+section .box label{
+	position: relative;
+	margin: 0 0 20px;
+	padding:0;
+	font-size: 15px;
+	color: #fff;
+	margin-left: 5%;
+	background-color: transparent;
+	text-transform: uppercase;
+	z-index: 3;
+}
+section .box input{
+	position: relative;
+	margin-left: 5%;
+	padding-left: 15px;
+	font-size: 18px;
+	width: 80%;
+	background-color: transparent;
+	border:none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+	transform: translateY(10px);
+	z-index: 3;
+}
+section .box input[type="submit"]{
+	position: relative;
+	margin-left: 5%;
+	padding-left: 20px;
+	padding-right: 25px;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border:2px solid #fff;
+	color: #fff;
+	margin-left: 10%;
+	text-transform: uppercase;
+	z-index: 3;
+}
+section .box input[type="submit"]:hover{
+	color: #fff;
+	background-color: #000;
+}
+section .box fieldset{
+	position: relative;
+	margin-left: 5%;
+	margin-top: 8%;
+	font-size: 24px;
+	margin-right: 10%;
+	margin-bottom: 50px;
+	width: 78%;
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+	z-index: 3;
+}
+section .box legend{
+	position: relative;
+	margin: 0 0 30px;
+	padding-left: 10px;
+	font-size: 25px;
+	background-color: transparent;
+	color: #fff;
+	text-transform: uppercase;
+	z-index: 3;
+}
+}
