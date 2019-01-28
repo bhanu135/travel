@@ -1,0 +1,238 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" ;
+
+:root {
+  --modal-duration: 1s;
+  --modal-color: #e8491d;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  font-size: 17px;
+  line-height: 1.6;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background:#e8491d;
+  padding: 1em 2em;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #3876ac;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  margin: 10% auto;
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+
+.modal-header {
+  background: var(--modal-color);
+  padding: 25px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  background: #fff;
+  border-left: 2px solid #e8491d;
+  border-right: 2px solid #e8491d;
+}
+
+.modal-footer {
+  background: var(--modal-color);
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  transform: translateY(-45px)!important;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-footer a{
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*login page */
+
+}
+.login-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+.login-box h1{
+  float: left;
+  font-size: 40px;
+  color: #e8491d;
+  font-family: sans-serif;
+  border-bottom: 3px solid #e8491d;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #e8491d;
+}
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: #e8491d;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.btn{
+  width: 100%;
+  background: none;
+  border: 2px solid #e8491d;
+  color: #e8491d;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor: pointer;
+  
+}
+.btn:hover{
+  background: #e8491d;
+  color: black;
+}
+.rg-in{
+  padding-left: 30px!important;
+  padding-top: 30px;
+}
+.rg-in label{
+  font-size: 18px!important;
+}
+.inp{
+  
+  border: none;
+  height: 30px;
+  width: 70%;
+  font-size: 18px;
+  border-bottom: 1px solid red;
+}
+.inp2{
+  padding-left: 10px!important;
+  border: none;
+  height: 30px;
+  width: 70%;
+  font-size: 18px;
+  border-bottom: 1px solid red;
+}
+.sel-1{
+  height: 28px;
+}
+.sel-2{
+  height: 25px!important;
+  width: 40%;
+}
+
+.dat12 input{
+  height: 25px;
+  padding-left:5px;
+  margin-left: 50px;
+  width: 30%;
+  transform: translateY(-30px);
+}
+#snbtn{
+  width: 60%;
+  height: 5vh;
+  margin-top: 30px;
+  margin-left: 20%;
+  background-color: #fff;
+  color: red;
+  padding top: 5px;
+  font-size: 20px;
+  border: 1px solid red;
+  margin-bottom: 30px;
+}
+#snbtn:hover{
+ 
+  background-color: #e8491d;
+  color: white;
+
+}
+.terms{
+  transform: translateY(-25px);
+}
+.terms label{
+  font-size: 15px!important;
+  color: red!important;
+}
+.terms input{
+  font-size: 15px!important;
+  color: red!important;
+}
