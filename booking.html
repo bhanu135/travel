@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blur</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/booking.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</head>
+<body>
+
+
+	<section>
+
+			<div class="box">
+					<form target="_blank">
+		  				<fieldset>
+				 			<legend>Book Now : </legend>
+							<h2>Booking:-</h2>
+							<label>source:</label><input type="text" name="">
+							<br>
+							<label>destination:</label><input type="text" name="">
+							<br>
+							<label>Enter Date:</label> <input type = "text" id = "datepicker-13">
+			        		<br>
+			        		<input type="submit" class="btn" value="check-availability" name="lgbtn">
+
+        				</fieldset>
+					</form>
+			</div>
+
+	</section>
+
+	
+	<script src="booking.js"></script>
+  <script>
+         $(function() {
+            $( "#datepicker-13" ).datepicker();
+           
+         });
+      </script>
+
+
+</body>
+</html>
