@@ -1,0 +1,107 @@
+body{
+
+	margin: 0;
+	padding:0;
+	font-family: sans-serif;
+	
+}
+
+section .leftbox{
+	background-size: cover;
+	height:100vh;
+	background-image: url(lg3.jpg);
+	width: 100%;
+	position: absolute; 
+}
+section .leftbox:before{
+	content: '';
+	background-image: url(lg3.jpg);
+	opacity: 0.5;
+	position: absolute; 
+}
+section .event{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: right;
+	box-sizing: border-box;
+}
+.lftxt h2{
+	color:white;
+	font-weight: 600;
+	font-size: 30px;
+	position: absolute;
+	left: 70px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	top: 100px;
+	text-shadow: 2px 3px 5px darkred;
+	}
+	.lftxt p{
+	color:white;
+	font-size: 17px;
+	letter-spacing: 2px;
+	position: absolute;
+	left: 140px;
+	top: 180px;
+	width: 450px;
+	
+	}
+section .event ul{
+	position: absolute;
+	top: 50%;
+	margin: 0;
+	padding: 10px;
+	padding-top: 10%;
+	box-sizing: border-box;
+}
+section .event ul li{
+	list-style: none;
+	background: #fff;
+	margin-top: 10px;
+	border:1px solid rgba(0,0,0,.3);
+	box-sizing: border-box;
+	height: 120px;
+}
+section .event ul li .sno{
+	position: relative;
+	padding: 20px;
+	background: #262626;
+	width: 30%;
+	height: 67%;
+	float: left;
+	text-align: center;
+	transition: 0.5s;
+	color: white;
+
+}
+section .event ul li .sno:hover{
+	background: rgba(0,0,0,0.8);
+	color: white;
+
+}
+.sno h1{
+	color: darkred;
+	font-size: 1.2rem;
+	padding-left: 0px;
+}
+section .event ul li .sno:hover h2{
+	
+	color: white!important;
+}
+section .details h2{
+	color: black;
+	padding-top: 20px;
+	padding-left: 100px;
+	margin-left: 100px;
+	padding-right: 20px;
+}
+section .details a{
+	color: darkred;
+	list-style: none;
+	text-decoration: none;
+	font-weight: 600;
+	padding-top: 10px;
+	padding-left: 80px;
+	margin-left: 10%;
+}
