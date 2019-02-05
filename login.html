@@ -1,48 +1,356 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<title>Travel....!</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel='stylesheet' href='https://unpkg.com/s3bubble-javascript/s3bubble.min.css' type='text/css' media='all' />
+	 <link rel="stylesheet" href="css/animate.min.css">
 
-	<script type="text/javascript">
-		
-		function dispaly() {
-			
-			sname=document.getElementById("lgname1");
-			spass=document.getElementById("lgpass1");
-
-			window.alert(sname.value);
-			window.alert(spass.value)
-		}
-	</script>
 </head>
-<body>
-
-	<div class="image1">
-		<img src="pics/pic4.jpg" width="100%" height="700px">
-	</div>
-	
-	<div class="box">
-			<div class="login-box">
-			  <h1>Login</h1>
-
-			  <div class="textbox">
-			  	<div class="input-field">
-			    <i class="fas fa-user"></i>
-			    <input type="text" placeholder="Username" name="lgname" id="lgname1" required="">
-			    </div>
-			  </div>
-			  <div class="textbox">
-			    <i class="fas fa-lock"></i>
-			    <input type="password" placeholder="Password" name="lgpass" id="lgpass1">
-			  </div>
-
-			  <input type="button" class="btn" value="Sign in" name="lgbtn" onclick="dispaly()">
-		</div>		
-	</div>
+<body>	
 	
 
+	<!--navigation bar-->
+	
+	<div id="mynavbar" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" role="navigation">
+		<div class="container-fluid">
+
+			<div class="navbar-header">
+				<div class="navbd" id="brand">
+				<a href="#" class="navbar-brand">Logo</a>
+				</div>
+				<button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#nav1">
+			    	<span class="navbar-toggler-icon"></span>
+			  	</button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="nav1">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+					<li class="nav-item"><a href="#service" class="nav-link">services</a></li>
+					<li class="nav-item"><a href="#blog" class="nav-link">blog</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+					<li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">more
+				        <span class="caret"></span></a>
+				        <ul class="dropdown-menu" id="dwn">
+				          <li class="text-dark"><a href="#"id="modal-btn">login</a></li>
+				          <li class="text-dark"><a href="registration.html" target="_blank" class="text-dark">register</a></li>
+				          <li><a href="#">profile</a></li>
+				       </ul>
+      				</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!--displayimage-->
+	<div class="mnhd " >
+	<img src="pics/maink.jpg" alt="background" class="img-fluid">
+	<p>welcome to</p>
+	<h2>JOURNEY PLANNER</h2>
+	<h6>make your dream fullfill</h6>
+	</div>
+	<!--jumbotron--->
+	<div class="jumbotron jumbotron-fluid">
+	  <div class="container wow slideInLeft">
+	  	<div class="jbtxt">
+	    <p class="lead text-dark text-center">Jobs fill your pockets but, adventures fill your soul.</p>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+	<!--service-->
+	<div class="service" id="service">
+	<div class="container">
+		<div class="srhd wow slideInLeft">
+			<h2 class="stit">Service</h2>
+			<p>An advanced city is not one where even the poor use cars, but rather one where even the rich use public transport.</p>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-6" >
+			<div class="car" >
+				<div class="pic">
+					<img src="pics/train.jpg">
+				</div>
+				<div class="tex">
+					<h2 class="title text-dark text-fluid">Train</h2>
+				</div>
+				<div class="bb">
+						<li><a href="booking.html" target="_blank">book-now</a></li> 
+				</div>
+			</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+			<div class="car" >
+				<div class="pic">
+					<img src="pics/aero1.png">
+				</div>
+				<div class="tex">
+					<h2 class="title text-dark text-fluid">aeroplane</h2>
+				</div>
+				<div class="bb">
+						<li><a href="booking.html" target="_blank">book-now</a></li> 
+				</div>
+			</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+			<div class="car" >
+				<div class="pic">
+					<img src="pics/bus5.jpg">
+				</div>
+				<div class="tex">
+					<h2 class="title text-dark text-fluid">Bus</h2>
+				</div>
+				<div class="bb">
+					<li><a href="booking.html" target="_blank">book-now</a></li> 
+				</div>
+			</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+			<div class="car" >
+				<div class="pic">
+					<img src="pics/car1.jpg">
+				</div>
+				<div class="tex">
+					<h2 class="title text-dark text-fluid">cab</h2>
+				</div>
+				<div class="bb">
+						<li><a href="booking.html" target="_blank">book-now</a></li> 
+				</div>
+			</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+	<!--offers-->
+<!--fixed background-->
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+			<div class="fb">
+				<p class="text-center text-fluid">A journey of a thousand miles begins with a single step.</p>
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--hotels-->
+
+
+	<!--Blog-->
+	<div class="blog " id="blog">
+		<div class="container">	
+
+			<div class="blgtxt wow slideInLeft">
+				<h2 class="text-center text-fluid justify-content-center">Touriest Blog</h2>
+				<p class="text-center text-fluid justify-content-center">One's destination is never a place, but a new way of seeing things.</p>
+			</div>
+
+				<div class="pt1">
+					<ul class="nav nav-tabs">
+					    <li class="active"><a data-toggle="tab" href="#me1" class="nav-link">Tajmahal</a></li>
+					    <li><a data-toggle="tab" href="#me2" class="nav-link">simla</a></li>
+					    <li><a data-toggle="tab" href="#me3" class="nav-link">redfort</a></li>
+					    <li><a data-toggle="tab" href="#me4" class="nav-link">golconda</a></li>
+				  	</ul>
+				</div>
+
+				<div class="pt2">
+				  <div class="tab-content">
+				    <div id="me1" class="tab-pane active">
+				    	<div class="row">
+				    		<div class="col-md-6 col-sm-12 col-lg-6">
+				      			<h3 class="text-center text-fluid">Tajmahal</h3>
+				      			<p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the tomb of his favourite wife, Mumtaz Mahal. It also houses the tomb of Shah Jahan, the builder. The tomb is the centerpiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall. </p>
+				      		</div>
+				      		<div class="col-md-6 col-sm-12">
+				      			<img src="pics/taj.jpg">
+				      		</div>
+				        </div>
+				    </div>
+
+				    <div id="me2" class="tab-pane fade">
+				      <div class="row">
+				      		<div class="col-md-6 col-sm-12">
+				      			<img src="pics/sm.jpg">
+				      		</div>
+				    		<div class="col-md-6 col-sm-12 col-lg-6">
+				      			<h3 class="text-center text-fluid">Simla hill station</h3>
+				      			<p>Shimla hill station is still the colonial summer capital (resort) to which British used to retreat in when heat of Indio-Gangetic plains used to become unbearable. Be it grey-stone work of Vice Regal Lodge, or Gaiety Theater putting neo-gothic architectural excellence, the beauty of building seem to come alive and not only staying in eyes of beholder. The Elizabethan style mixed and merged with different other forms in buildings like Ellerslie, Christ Church, Gorton Castle, Wood Ville, etc are a must-see.</p>
+				      		</div>
+				        </div>
+				    </div>
+				    <div id="me3" class="tab-pane fade">
+				      <div class="row">
+				      		<div class="col-md-6 col-sm-12">
+				      			<img src="pics/rd.jpg">
+				      		</div>
+				    		<div class="col-md-6 col-sm-12 col-lg-6">
+				      			<h3 class="text-center text-fluid">redfort</h3>
+				      			<p>Red Fort is a historic fort in the city of Delhi in India. It was the main residence of the emperors of the Mughal dynasty for nearly 200 years, until 1856.It is located in the center of Delhi and houses a number of museums. In addition to accommodating the emperors and their households, it was the ceremonial and political center of the Mughal state and the setting for events critically impacting the region.</p>
+				      		</div>
+				      		
+				        </div>
+				    </div>
+				    <div id="me4" class="tab-pane fade">
+				    		<div class="row">
+				    		<div class="col-md-6 col-sm-12 col-lg-6">
+				      			<h3 class="text-center text-fluid ">golconda</h3>
+				      			<p>Golkonda, also known as Golconda, Gol konda ("Round shaped hill"), or Golla konda, (Shepherd's Hill) is a citadel and fort in Southern India and was the capital of the medieval sultanate of the Qutb Shahi dynasty (c.1512–1687), is situated 11 km (6.8 mi) west of Hyderabad. It is also a tehsil of Hyderabad district, Telangana, India. The region is known for the mines that have produced some of the world's most famous gems, including the Koh-i-Noor, the Hope Diamond, Nassak Diamond and the Noor-ul-Ain. </p>
+				      		</div>
+				      		<div class="col-md-6 col-sm-12">
+				      			<img src="pics/gc.jpg">
+				      		</div>
+				        </div>
+				    </div>
+				  </div>
+				</div>		  		
+
+			
+		</div>
+	</div>
+
+	
+	
+
+	<!--contact-->
+
+	<div id="contact" class="contact">
+		<div class="container">
+				
+				<div class="cntxt wow slideInLeft">
+				<h2 class="text-center text-fluid justify-content-center">Contact</h2>
+				<p>Journey plnner is about travel and Safety</p>
+				</div>
+			<div class="row ">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="cnpt">
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon" id="sizing-addon1" ><i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+						<input type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Fullname" id="inp1">
+					</div>
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+						<input type="text" class="form-control" aria-describedby="sizaing-addon1" placeholder="Email address" id="inp2">
+					</div>
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon" id="sizaing-addon1">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</span>
+						<input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone number">
+					</div>	
+				</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="input-group">
+						<textarea name="" id="" cols="80" rows="5" class="form-control"></textarea>
+					</div>
+					<button class="btn btn-lg">Submit your message</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!--data-modal-->
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-4">
+				<div id="my-modal" class="modal ">
+			    <div class="modal-content wow zoomIn" id="mdid">
+
+			      <div class="modal-header">
+			      	<h2 id="mdlg" class="text-fluid text-center">Login</h2>
+			        <span class="close" id="closebutton">&times;</span>
+			        
+			      </div>
+				      <div class="modal-body">
+				          <div class="textbox">
+				            <div class="input-field">
+				            	<input type="text" placeholder="Email" name="lgeml" id="lgname1" required="">
+				            </div>
+				          </div>
+
+				          <div class="textbox">
+				            <input type="password" placeholder="Password" name="lgpass" id="lgpass1" required="">
+				          </div>
+
+				          <button type="submit" class="btn" value="login" name="lgbtn" id="mdlgbtn">login</button> 
+				      </div>
+			     	 <div class="modal-footer">
+			          <a href="registration.html" class="text-fluid" target="_blank">don't have an account? Signup</a>
+			      	</div>
+	    	</div>
+  			</div>
+	</div>
+  </div>
+</div>
+  
+	<!---footer-->
+	<div class="footer" id="footer">
+		<div class="container-fluid">
+			<div class="row">
+				
+					<div class="col-lg-6 col-md-6 col-sm-12" >
+						<div class="ftd">
+						<div class="ftgp1">
+						
+							<h4 class="fth text-center text-fluid" >Contact-us</h4>
+							<div ftp1>
+								<p>MREC</p>
+								<p>maisammmaguda,kompally,</p>
+								<p>Hyderabad</p>
+								<p>9182133911</p>
+								<p>www.journeyplanner@gmail.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ftgp2">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<h4 class="fth justify-content-center">Group</h4>
+						<p>Lekhana</p>
+						<p>Tanuja</p>
+						<p>Priya</p>
+						<p>Bhanu</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="modal.js"></script>
+	<script src="register.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+    </script>
 </body>
 </html>
