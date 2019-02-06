@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css?family=Niconne');
 @import url('https://fonts.googleapis.com/css?family=Dynalight');
 @import url('https://fonts.googleapis.com/css?family=Italianno');
+@import url('https://fonts.googleapis.com/css?family=Oswald:600');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 body{
   margin: 0;
   padding: 0;
@@ -80,6 +82,62 @@ padding-left: 15px;
 	padding: 50px ;
 	margin-top: 20px;
 	background-color: transparent !important;
+
+}
+.mnhd h2{
+	color:rgba(179,0,0,0.9);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	letter-spacing: 5px;
+	text-shadow: 2px 3px  5px #222222;
+	transform: translate(-50%,-50%);
+	font-size: 55px;
+	font-family: 'Oswald', sans-serif;
+}
+.mnhd h6{
+	color:rgba(179,0,0,0.9);
+	position: absolute;
+	top: 58%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20px;
+	letter-spacing: 6px;
+	font-weight: 600;
+}
+.mnhd h2::before{
+	content: '';
+		background-color:rgba(179,0,0,0.9);
+		height: 3px;
+		width: 459px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		transform: translateY(-50px);
+}
+.mnhd h2::after{
+	content: '';
+		background-color:rgba(179,0,0,0.9);
+		height: 3px;
+		width: 459px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		transform: translateY(50px);
+}
+.mnhd p{
+	color:rgba(179,0,0,0.9);
+	position: absolute;
+	top: 43%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20px;
+	letter-spacing: 6px;
+	font-weight: 600;
+}
+
+.mnhd img{
+	opacity: 0.85;
 
 }
 .srhd h2::before{
@@ -530,7 +588,7 @@ font-weight: bold;
 /*modal login*/
 :root {
   --modal-duration: 1s;
-  --modal-color: #e8491d;
+  --modal-color: darkred;
 }
 
 .mdlg h2{
@@ -548,7 +606,7 @@ font-weight: bold;
   height: 100%;
   width: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
@@ -607,18 +665,18 @@ font-weight: bold;
 #mdlgbtn{
 	width: 100%;
 	height: 35px;
-	border: 1px solid #e8491d;
+	border: 1px solid darkred;
 	padding-top: 2px;
 	margin-top: 4%;
-	color: #e8491d;
+	color: darkred;
 	font-weight: 600;
 	border-radius: 0;
 	font-size: 20px;
 	text-transform: uppercase;
 }
-.#mdlgbtn:hover{
-	color: white;
-	background-color:red!important;
+#mdlgbtn:hover{
+	color: white!important;
+	background-color:darkred!important;
 }
 .modal-footer a{
 	text-decoration: none;
@@ -656,9 +714,9 @@ font-weight: bold;
 .login-box h1{
   float: left;
   font-size: 40px;
-  color: #e8491d;
+  color: darkred;
   font-family: sans-serif;
-  border-bottom: 3px solid #e8491d;
+  border-bottom: 3px solid darkred;
   margin-bottom: 50px;
   padding: 13px 0;
 }
@@ -668,7 +726,7 @@ font-weight: bold;
   font-size: 20px;
   padding: 8px 0;
   margin: 8px 0;
-  border-bottom: 1px solid #e8491d;
+  border-bottom: 1px solid darkred;
 }
 .textbox i{
   width: 26px;
@@ -717,6 +775,68 @@ font-weight: bold;
 		background-color: transparent!important;
 
 	}
+
+
+		.mnhd h2{
+			color:rgba(179,0,0,0.9);
+			position: absolute;
+			top: 25%;
+			left: 50%;
+			letter-spacing: 5px;
+			text-shadow: 2px 3px  5px #222222;
+			transform: translate(-50%,-50%);
+			font-size: 22px;
+			font-family: 'Oswald', sans-serif;
+		}
+	.mnhd h6{
+			color:rgba(179,0,0,0.9);
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			font-size: 15px;
+			letter-spacing: 2px;
+			font-weight: 600;
+	}
+	.mnhd h2::before{
+			content: '';
+			background-color:rgba(179,0,0,0.9);
+			height: 3px;
+			width: 250px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			transform: translateY(-45px);
+	}
+	.mnhd h2::after{
+		content: '';
+			background-color:rgba(179,0,0,0.9);
+			height: 3px;
+			width: 250px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			transform: translateY(50px);
+	}
+	.mnhd p{
+		color:rgba(179,0,0,0.9);
+		position: absolute;
+		top: 19%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		font-size: 15px;
+		letter-spacing: 5px;
+		font-weight: 600;
+	}
+
+
+
+
+
+
+
+
+
 	.fth{
 		color: red!important;
 	}
